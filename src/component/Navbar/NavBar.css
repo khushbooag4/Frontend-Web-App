@@ -1,0 +1,165 @@
+.navbar{
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: relative;
+    /* z-index: 1000; */
+}
+
+.navbar .navmenu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+   text-align: center;
+   list-style: none;
+   justify-content: space-around;
+   margin: 1.5rem;
+}
+.nav-links{
+  
+    color:black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+.nav-item {
+      display: inline;
+      align-items: center;
+      height: 80px;
+    }
+
+
+.navbar a .logo{
+  margin-left: 30px;
+  padding: 10px 10px;
+  justify-self: start;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+
+}
+.nav-links-mobile{
+  display: none;
+}
+
+.menu-icon{
+  display: none;
+
+}
+.fa-ellipsis-v{
+  padding: 0;
+  margin: 0;
+  padding-right: 6px;
+  cursor: pointer;
+
+}
+.navbar .btn{
+  color: #fff;
+  background: rgb(20, 20, 133);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  padding-left: 30px;
+  justify-self: end;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .navbar{
+    top: -50px;
+    height: 60px;
+  }
+  .navbar a .logo{
+      width: 40px;
+  }
+.NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .navmenu.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #1888ff;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      background: #1888ff;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #1888ff;
+      transition: 250ms;
+    }
+  
+    .navbar .btn{
+      display: none;
+  }
+  .fa-ellipsis-v{
+    display: none;
+  }
+}
